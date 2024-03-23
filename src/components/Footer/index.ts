@@ -12,9 +12,9 @@ class Footer extends HTMLElement {
     const componentRoot = document.createElement('div');
 
     const p = document.createElement('p');
-    p.innerHTML="bosta"
+    p.innerHTML = 'bosta';
 
-    componentRoot.appendChild(p)
+    componentRoot.appendChild(p);
     return componentRoot;
   }
 }
