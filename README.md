@@ -1,7 +1,6 @@
 # framework-base
 
 ```bash
-npm i
-npm run start
-
+yarn
+yarn start
 ```
