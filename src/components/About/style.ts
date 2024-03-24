@@ -10,9 +10,11 @@ const style = `
   #about-title{
     font-weight: 600;
     color: #333333;
+    font-size: 32px;
   }
   #about-subtitle{
     font-weight: 300;
+    font-size: 24px;
   }
 `;
 
