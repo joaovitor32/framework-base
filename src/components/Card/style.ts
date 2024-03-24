@@ -9,7 +9,7 @@ const style = `
     position: relative;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     align-items: center;
   }
