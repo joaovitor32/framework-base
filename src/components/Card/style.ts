@@ -7,6 +7,11 @@ const style = `
     background-color: rgba(128, 128, 128, 0.24);
     padding: 16px 24px;
     position: relative;
+
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
   }
 `;
 
