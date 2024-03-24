@@ -6,6 +6,7 @@ const style = `
     border-radius: 8px;
     background-color: rgba(128, 128, 128, 0.24);
     padding: 16px 24px;
+    position: relative;
   }
 `;
 

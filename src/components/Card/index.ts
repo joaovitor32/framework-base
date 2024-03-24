@@ -11,7 +11,6 @@ class Card extends HTMLElement {
   }
 
   build(): HTMLDivElement {
-    //base do component <h1>Felipe</h1>
     const componentRoot = document.createElement('div');
     componentRoot.setAttribute('id', 'card');
 
@@ -30,4 +29,4 @@ class Card extends HTMLElement {
   }
 }
 
-customElements.define('card-profile', Card);
+export default Card
