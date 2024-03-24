@@ -12,11 +12,23 @@ class Card extends HTMLElement {
 
   build(): HTMLDivElement {
     const componentRoot = document.createElement('div');
-    componentRoot.setAttribute('id', 'card');
+    componentRoot.setAttribute('id', 'about-card');
 
     Array.from(this.children).forEach((child) => {
       componentRoot.appendChild(child.cloneNode(true)); // Use cloneNode to move the nodes
     });
+
+    const title = document.createElement('p');
+    title.textContent = 'João Vitor Muniz Lopes';
+    title.setAttribute('id', 'about-title');
+
+
+    const subtitle = document.createElement('p');
+    subtitle.textContent = 'Um texto genérico sobre mim';
+    subtitle.setAttribute('id', 'about-subtitle');
+
+    componentRoot.appendChild(title);
+    componentRoot.appendChild(subtitle)
 
     return componentRoot;
   }
@@ -29,4 +41,5 @@ class Card extends HTMLElement {
   }
 }
 
-export default Card
+export default Card;
+3;
