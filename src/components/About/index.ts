@@ -11,6 +11,9 @@ class Card extends HTMLElement {
   }
 
   build(): HTMLDivElement {
+    const aboutTitle = this.getAttribute('about-title');
+    const aboutSubTitle = this.getAttribute('about-subtitle');
+
     const componentRoot = document.createElement('div');
     componentRoot.setAttribute('id', 'about-card');
 
@@ -19,12 +22,12 @@ class Card extends HTMLElement {
     });
 
     const title = document.createElement('p');
-    title.textContent = 'João Vitor Muniz Lopes';
+    title.textContent = aboutTitle;
     title.setAttribute('id', 'about-title');
 
 
     const subtitle = document.createElement('p');
-    subtitle.textContent = 'Um texto genérico sobre mim';
+    subtitle.textContent = aboutSubTitle;
     subtitle.setAttribute('id', 'about-subtitle');
 
     componentRoot.appendChild(title);

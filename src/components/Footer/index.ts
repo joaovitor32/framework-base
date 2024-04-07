@@ -9,6 +9,8 @@ class Footer extends HTMLElement {
   }
 
   build(): HTMLDivElement {
+    const footerTitle = this.getAttribute('footer-title');
+
     const componentRoot = document.createElement('div');
     componentRoot.setAttribute('id', 'footer');
 
@@ -16,11 +18,11 @@ class Footer extends HTMLElement {
       componentRoot.appendChild(child.cloneNode(true));
     });
 
-    const span = document.createElement("span");
-    span.textContent="© Copyright 2024 João Vitor Muniz Lopes. Todos os direitos reservados."
+    const span = document.createElement('span');
+    span.textContent = footerTitle;
     span.setAttribute('id', 'footer-text');
 
-    componentRoot.appendChild(span)
+    componentRoot.appendChild(span);
 
     return componentRoot;
   }
